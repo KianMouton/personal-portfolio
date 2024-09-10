@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  background-color: black;
+  border-bottom: 2px solid rgb(55, 234, 102);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .links a:hover {
+  color: rgba(115, 228, 145);
+}
+
+.navbar p {
+  color: white;
+  padding: 10px;
+}
+
+.navbar p:hover {
+  color: rgba(115, 228, 145);
+}
+
+.me {
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.me h1 {
+  color: rgb(24, 220, 77);
+  margin-bottom: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.me .full-stack {
+  border-bottom: 2px solid rgb(55, 234, 102);
+}
+
+.me .description {
+  width: 400px;
+  text-align: center;
 }
