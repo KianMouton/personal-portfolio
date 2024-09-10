@@ -36,6 +36,7 @@ body {
 .navbar .links a {
   color: white;
   text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar .links a:hover {
@@ -45,11 +46,11 @@ body {
 .navbar p {
   color: white;
   padding: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar p:hover {
   color: rgba(115, 228, 145);
-  border-bottom: 2px solid rgba(115, 228, 145);
 }
 
 .me {
@@ -82,11 +83,15 @@ body {
 .me .skills{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .me .skills .skill {
   display: flex;
   flex-direction: column;
+  width: 100px;
   gap: 20px;
   align-items: center;
   border: 2px solid black;

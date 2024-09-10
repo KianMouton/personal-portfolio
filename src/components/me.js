@@ -26,7 +26,7 @@ const Me = () => {
                 </div>
                 <div className='skill'>
                     <i class="fa-solid fa-database fa-2xl"></i>
-                    <p>Mongo database</p>
+                    <p>Mongo</p>
                 </div>
                 <div className='skill'>
                     <i class="fa-brands fa-node-js fa-2xl"></i>
