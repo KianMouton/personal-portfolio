@@ -49,6 +49,7 @@ body {
 
 .navbar p:hover {
   color: rgba(115, 228, 145);
+  border-bottom: 2px solid rgba(115, 228, 145);
 }
 
 .me {
@@ -65,9 +66,30 @@ body {
 
 .me .full-stack {
   border-bottom: 2px solid rgb(55, 234, 102);
+  font-weight: bold;
 }
 
 .me .description {
   width: 400px;
   text-align: center;
+}
+
+.me .location {
+  border-bottom: 2px solid rgb(55, 234, 102);
+  font-weight: bold;
+}
+
+.me .skills{
+  display: flex;
+  flex-direction: row;
+}
+
+.me .skills .skill {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
 }

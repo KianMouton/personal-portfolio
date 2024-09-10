@@ -12,7 +12,7 @@ const Navbar = () => {
         <a href="https://github.com/KianMouton" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github fa-2xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/KianMouton" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin fa-2xl"></i>
         </a>
         </div>

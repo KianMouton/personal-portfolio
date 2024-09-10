@@ -13,7 +13,30 @@ const Me = () => {
             <p>When I’m not coding, you can find me in the gym, playing video games or learning some new javascript framwork.</p>
             <p>Feel free to explore my projects and reach out if you’d like to connect or collaborate!</p>
             </div>
-            <p>Cape Town, South Africa</p>
+            <p className='location'>Cape Town, South Africa</p>
+            <p>Skills</p>
+            <div className='skills'>
+                <div className='skill'>
+                    <i class="fa-brands fa-js fa-2xl"></i>
+                    <p>Javascript</p>
+                </div>
+                <div className='skill'>
+                    <i class="fa-brands fa-python fa-2xl"></i>
+                    <p>Python</p>
+                </div>
+                <div className='skill'>
+                    <i class="fa-solid fa-database fa-2xl"></i>
+                    <p>Mongo database</p>
+                </div>
+                <div className='skill'>
+                    <i class="fa-brands fa-node-js fa-2xl"></i>
+                    <p>Node.js</p>
+                </div>
+                <div className='skill'>
+                    <i class="fa-brands fa-react fa-2xl"></i>
+                    <p>React</p>
+                </div>
+            </div>
         </div>
     )
 }
