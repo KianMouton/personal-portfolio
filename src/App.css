@@ -139,3 +139,34 @@ body {
 .img-btn {
   margin-top: 20px;
 }
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-10%);
+  transition: all 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0px);
+  box-shadow: 5px 5px 5px black;
+}
+
+.skill:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.skill:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.skill:nth-child(4) {
+  transition-delay: 400ms;
+}
+
+.skill:nth-child(5) {
+  transition-delay: 500ms;
+}
+

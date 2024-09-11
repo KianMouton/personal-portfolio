@@ -1,5 +1,32 @@
+import { useEffect } from 'react';
 
 const Me = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        // The hidden class is applied to items that are observed
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Cleanup function to disconnect the observer when the component unmounts
+        return () => {
+            hiddenElements.forEach(element => {
+                observer.unobserve(element);
+            });
+        };
+    }, []);
+
     return (
         <div className="me">
             <h1>Kian Mouton</h1>
@@ -16,23 +43,23 @@ const Me = () => {
             <p className='location'>Cape Town, South Africa</p>
             <p>Skills</p>
             <div className='skills'>
-                <div className='skill'>
+                <div className='skill hidden'>
                     <i class="fa-brands fa-js fa-2xl"></i>
                     <p>Javascript</p>
                 </div>
-                <div className='skill'>
+                <div className='skill hidden'>
                     <i class="fa-brands fa-python fa-2xl"></i>
                     <p>Python</p>
                 </div>
-                <div className='skill'>
+                <div className='skill hidden'>
                     <i class="fa-solid fa-database fa-2xl"></i>
                     <p>Mongo</p>
                 </div>
-                <div className='skill'>
+                <div className='skill hidden'>
                     <i class="fa-brands fa-node-js fa-2xl"></i>
                     <p>Node.js</p>
                 </div>
-                <div className='skill'>
+                <div className='skill hidden'>
                     <i class="fa-brands fa-react fa-2xl"></i>
                     <p>React</p>
                 </div>

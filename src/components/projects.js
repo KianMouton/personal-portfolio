@@ -6,21 +6,25 @@ import projectImage4 from "../images/project_img_4.jpg";
 import { gsap } from 'gsap';
 
 const Projects = () => {
-    const images = [projectImage4, projectImage3, projectImage2, projectImage1];
+    const images = [projectImage1, projectImage2, projectImage3, projectImage4];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNextImage = () => {
         const imgElement = document.querySelector('.project-img');
 
-        // Update the index immediately
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-
-        // Animate the image out, then in
-        gsap.to(imgElement, { opacity: 0, onComplete: () => {
-            // Change the source of the image after fade-out
-            imgElement.src = images[(currentIndex + 1) % images.length];
-            gsap.to(imgElement, { opacity: 1 });
-        }});
+        gsap.to(imgElement, { 
+            duration: 0.2,  
+            filter: 'blur(3px)', 
+            onComplete: () => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+                imgElement.src = images[currentIndex]; 
+                
+                gsap.to(imgElement, { 
+                    duration: 0.2, 
+                    filter: 'blur(0px)' 
+                });
+            }
+        });
     };
 
     return (
