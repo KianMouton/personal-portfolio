@@ -103,6 +103,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .projects h1 {
@@ -117,6 +119,7 @@ body {
   border: 2px solid black;
   border-radius: 20px;
   width: 400px;
+  height: 450px;
 }
 
 .img-wrapper {
