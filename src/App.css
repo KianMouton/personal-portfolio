@@ -98,3 +98,28 @@ body {
   border-radius: 20px;
   padding: 30px;
 }
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects h1 {
+  text-align: center;
+  color: rgb(55, 234, 102);
+}
+
+.projects .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.projects .project img {
+  width: 350px;
+  box-shadow: 10px 10px 10px rgb(77, 77, 77);
+}

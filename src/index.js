@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
-import Navbar from './components/navbar.js';
-import Me from './components/me.js';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Navbar from './components/navbar.js';
+import Me from './components/me.js';
+import Projects from './components/projects.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <Me />
+    <Projects />
   </React.StrictMode>
 );
 
