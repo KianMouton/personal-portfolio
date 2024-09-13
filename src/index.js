@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/navbar.js';
 import Me from './components/me.js';
 import Projects from './components/projects.js';
+import Footer from './components/footer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <Navbar />
     <Me />
     <Projects />
+    <Footer />
   </React.StrictMode>
 );
 

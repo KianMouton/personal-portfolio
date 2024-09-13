@@ -41,27 +41,37 @@ const Me = () => {
             <p>Feel free to explore my projects and reach out if you’d like to connect or collaborate!</p>
             </div>
             <p className='location'>Cape Town, South Africa</p>
-            <p>Skills</p>
+            <h1>Skills</h1>
             <div className='skills'>
                 <div className='skill hidden'>
-                    <i class="fa-brands fa-js fa-2xl"></i>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p className='skill-type'>Front End</p>
+                    <p>React</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
                     <p>Javascript</p>
+                    <p>TailwindCSS</p>
+                    <p>Bootstrap</p>
+                    <p>JQuery</p>
                 </div>
                 <div className='skill hidden'>
-                    <i class="fa-brands fa-python fa-2xl"></i>
+                    <i class="fa-solid fa-code fa-2xl"></i>
+                    <p className='skill-type'>Back End</p>
+                    <p>NodeJS</p>
+                    <p>ExpressJS</p>
+                    <p>MongoDB</p>
+                    <p>Mongoose</p>
+                    <p>Restful APIs</p>
                     <p>Python</p>
                 </div>
                 <div className='skill hidden'>
-                    <i class="fa-solid fa-database fa-2xl"></i>
-                    <p>Mongo</p>
-                </div>
-                <div className='skill hidden'>
-                    <i class="fa-brands fa-node-js fa-2xl"></i>
-                    <p>Node.js</p>
-                </div>
-                <div className='skill hidden'>
-                    <i class="fa-brands fa-react fa-2xl"></i>
-                    <p>React</p>
+                    <i class="fa-solid fa-toolbox fa-2xl"></i>
+                    <p className='skill-type'>Other</p>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>Netlify</p>
+                    <p>Webpack</p>
+                    <p>VS Code</p>
                 </div>
             </div>
         </div>

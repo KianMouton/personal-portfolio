@@ -5,6 +5,7 @@ import projectImage3 from "../images/project_img_3.jpg";
 import projectImage4 from "../images/project_img_4.jpg";
 import calculator1 from "../images/calculator_1.png";
 import calculator2 from "../images/calculator_2.png";
+import drumPad from "../images/drumpad.png";
 import { gsap } from 'gsap';
 
 const Projects = () => {
@@ -67,7 +68,7 @@ const Projects = () => {
                         <img className='project-img store' src={Storeimages[StoreCurrentIndex]} alt={`project img ${StoreCurrentIndex + 1}`} />
                     </div>
                     <button className='img-btn' onClick={handleNextStore}>Next Image</button>
-                    <p>A responsive e-commerce store built with Mongo, Express, React and Node.js</p>
+                    <p>A responsive e-commerce store built with Mongo, Express, React, Node.js and using Yoco for payment processing</p>
                 </div>
                 <div className='project'>
                     <h2>Calculator App</h2>
@@ -76,6 +77,14 @@ const Projects = () => {
                     </div>
                     <button className='img-btn' onClick={handleNextCal}>Next Image</button>
                     <p>A Calculator web App</p>
+                </div>
+                <div className='project'>
+                    <h2>Drum Pad App</h2>
+                    <div className='img-wrapper'>
+                        <img className='project-img' src={drumPad} alt='project img 1' />
+                    </div>
+                    <p>A Drum pad built using React</p>
+    
                 </div>
             </div>
         </div>
