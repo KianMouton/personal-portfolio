@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/navbar.js';
 import Me from './components/me.js';
+import Skills from './components/skills.js';
 import Projects from './components/projects.js';
 import Footer from './components/footer.js';
 
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Me />
+    <Skills />
     <Projects />
     <Footer />
   </React.StrictMode>

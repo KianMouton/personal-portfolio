@@ -69,6 +69,7 @@ const Projects = () => {
                     </div>
                     <button className='img-btn' onClick={handleNextStore}>Next Image</button>
                     <p>A responsive e-commerce store built with Mongo, Express, React, Node.js and using Yoco for payment processing</p>
+                    <a className='view-code-btn' href='https://github.com/KianMouton/e-commerce-store' target='_blank' rel='noopener noreferrer'>View Code</a>
                 </div>
                 <div className='project'>
                     <h2>Calculator App</h2>
@@ -77,6 +78,7 @@ const Projects = () => {
                     </div>
                     <button className='img-btn' onClick={handleNextCal}>Next Image</button>
                     <p>A Calculator web App</p>
+                    <a className='view-code-btn' href='https://github.com/KianMouton/e-commerce-store' target='_blank' rel='noopener noreferrer'>View Code</a>
                 </div>
                 <div className='project'>
                     <h2>Drum Pad App</h2>
@@ -84,7 +86,7 @@ const Projects = () => {
                         <img className='project-img' src={drumPad} alt='project img 1' />
                     </div>
                     <p>A Drum pad built using React</p>
-    
+                    <a className='view-code-btn' href='https://github.com/KianMouton/e-commerce-store' target='_blank' rel='noopener noreferrer'>View Code</a>
                 </div>
             </div>
         </div>
