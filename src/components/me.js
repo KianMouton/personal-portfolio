@@ -2,7 +2,7 @@
 const Me = () => {
 
     return (
-        <div className="me">
+        <div className="me" id='me'>
             <div>
                 <h1>Nice to meet you I'm Kian</h1>
                 <p>I am a passionate Full-Stack developer and I love learning new technologies and experementing with interesting ideas</p>
