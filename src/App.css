@@ -332,4 +332,39 @@ footer {
   .skills .skill p {
     font-size: 20px;
   }
+
+  .projects h1 {
+    font-size: 50px;
+  }
+  
+  .projects .project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 1300px;
+    height: 600px;
+  }
+
+  .project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    padding-left: 30px;
+  }
+
+  .project-title h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .img-wrapper {
+    width: 600px; 
+    height: 350px;
+  }
+
+  .project .description {
+    font-size: 20px;
+  }
 }
