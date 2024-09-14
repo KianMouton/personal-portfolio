@@ -14,7 +14,6 @@ body {
   align-items: center;
   height: 20%;
   background-color: black;
-  border-bottom: 2px solid rgb(55, 234, 102);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -53,39 +52,46 @@ body {
   color: rgba(115, 228, 145);
 }
 
-.me {
-  color: black;
+.about {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.about p, h1 {
+  color: black;
+  margin: 0;
+}
+
 .me {
+  background-image: linear-gradient(to bottom, white, rgb(55, 234, 102));
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.me div {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+}
+
+.me h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  font-size: 23px;
 }
 
-.me h1 {
-  color: rgb(24, 220, 77);
-  margin-bottom: 1px;
-}
-
-.me .full-stack {
-  border-bottom: 2px solid rgb(55, 234, 102);
-  font-weight: bold;
-}
-
-.me .description {
-  width: 400px;
-  text-align: center;
-}
-
-.me .location {
-  border-bottom: 2px solid rgb(55, 234, 102);
-  font-weight: bold;
+.me p {
+  margin: 5px;
 }
 
 .skills-component {
@@ -93,8 +99,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(55, 234, 102);
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
 }
 
 .skills-component h1 {
@@ -133,10 +137,16 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 50px;
+}
+
+.projects {
+  background-image: linear-gradient(to bottom, rgb(55, 234, 102), white);
 }
 
 .projects h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .projects .project {
@@ -144,10 +154,15 @@ body {
   flex-direction: column;
   align-items: center;
   border: 3px solid black;
+  background-color: white;
   border-radius: 20px;
-  width: 400px;
+  width: 350px;
   height: 450px;
   box-shadow: 10px 10px 10px black;
+}
+
+.projects .project p {
+  padding-left: 10px;
 }
 
 .img-wrapper {
@@ -260,4 +275,61 @@ footer {
 
 .footer-links a:hover {
   color: white;
+}
+
+@media screen and (min-width: 500px) {
+  
+  .about {
+    height: 80vh;
+    align-items: baseline;
+    padding-left: 50px;
+  }
+
+  .about p {
+    font-size: 50px;
+  }
+
+  .about h1 {
+    font-size: 70px;
+  }
+
+  .me {
+    height: 50vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .me div {
+    width: 1000px;
+    padding: 20px;
+  }
+
+  .me h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+  }
+  
+  .me p {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin: 4px;
+    font-size: 30px;
+  }
+
+  .skills-component h1 {
+    font-size: 50px;
+  }
+  
+  .skills .skill {
+    width: 400px;
+    margin: 20px;
+  }
+
+  .skills .skill p {
+    font-size: 20px;
+  }
 }

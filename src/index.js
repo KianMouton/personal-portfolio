@@ -4,6 +4,7 @@ import './App.css';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/navbar.js';
+import About from './components/about.js';
 import Me from './components/me.js';
 import Skills from './components/skills.js';
 import Projects from './components/projects.js';
@@ -13,6 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
+    <About />
     <Me />
     <Skills />
     <Projects />

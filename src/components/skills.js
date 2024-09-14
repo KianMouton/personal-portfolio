@@ -1,5 +1,32 @@
+import { useEffect } from 'react';
 
 const Skills = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        // The hidden class is applied to items that are observed
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Cleanup function to disconnect the observer when the component unmounts
+        return () => {
+            hiddenElements.forEach(element => {
+                observer.unobserve(element);
+            });
+        };
+    }, []);
+
     return (
         <div className='skills-component'>
         <h1>Skills</h1>
@@ -30,6 +57,7 @@ const Skills = () => {
                     <p className='skill-type'>Other</p>
                     <p>Git</p>
                     <p>GitHub</p>
+                    <p>Flask</p>
                     <p>Netlify</p>
                     <p>Webpack</p>
                     <p>VS Code</p>
