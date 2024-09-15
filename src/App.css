@@ -60,6 +60,22 @@ body {
   margin: 0;
 }
 
+.test {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper p {
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 .links {
   display: flex;
   justify-content: center;
@@ -104,6 +120,15 @@ body {
 
 .me p {
   margin: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+      background-color: transparent;
+  }
+  to {
+      background-color: yellow;
+  }
 }
 
 .skills-component {
@@ -231,6 +256,7 @@ body {
 
 footer {
   margin-top: 20px;
+  padding-top: 20px;
   color: white;
   display: flex;
   flex-direction: column;

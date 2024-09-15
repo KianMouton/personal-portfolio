@@ -1,5 +1,33 @@
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import SplitText from 'split-text-js';
 
 const About = () => {
+        
+    useEffect(() => {
+        //animation for the the text array
+        const titles = gsap.utils.toArray('.text-wrapper p'); 
+        const tl = gsap.timeline({ repeat: -1 });
+
+        titles.forEach((title) => {
+            const splitTitle = new SplitText(title); 
+
+            tl.from(splitTitle.chars, {
+                opacity: 0,
+                y: 10,
+                rotateX: -90,
+                stagger: .02, 
+            }, "<") 
+
+            .to(splitTitle.chars, {
+                opacity: 0,
+                y: -10,
+                rotateX: 90,
+                stagger: .02, 
+            }, "<1"); 
+        });
+        
+    }, []); 
 
     const scrollToElement = (event) => {
         event.preventDefault(); 
@@ -20,7 +48,15 @@ const About = () => {
             <div className='about'>
                 <p>Hi my name is</p>
                 <h1>Kian Mouton</h1>
-                <p>and I am a Full-Stack Developer</p>
+                <div className='test'>
+                <p>and I am a 
+                    <div className='text-wrapper'>
+                    <p>frontend</p>
+                    <p>backend</p>
+                    <p>Full-Stack</p>
+                    </div>
+                     Developer</p>
+                </div>
             </div>
             <nav className='nav'>
                 <a href='#me' onClick={scrollToElement}><button>about</button></a>

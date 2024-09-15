@@ -5,7 +5,7 @@ import drumPad from "../images/drumpad.png";
 const Projects = () => {
     return (
         <div className='projects' id='projects'>
-            <h1>Projects</h1>
+            <h1>PROJECTS</h1>
             <div className='projects-grid'>
                 <div className='project-item'>
                     <img src={projectImage1} alt='projectImage1' />
