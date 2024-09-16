@@ -63,17 +63,15 @@ body {
 .test {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .text-wrapper p {
   font-family: sans-serif;
-  font-size: 25px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
   line-height: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .links {
@@ -403,5 +401,17 @@ footer {
     height: 500px; 
     transition: transform 0.3s ease;
     object-fit: cover;
+  }
+
+  .text-wrapper {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .text-wrapper p {
+    font-family: sans-serif;
+    line-height: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

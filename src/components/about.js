@@ -49,13 +49,13 @@ const About = () => {
                 <p>Hi my name is</p>
                 <h1>Kian Mouton</h1>
                 <div className='test'>
-                <p>and I am a 
-                    <div className='text-wrapper'>
+                <p>and I am a </p>
+                    <span className='text-wrapper'>
                     <p>frontend</p>
                     <p>backend</p>
                     <p>Full-Stack</p>
-                    </div>
-                     Developer</p>
+                    </span>
+                <p>Developer</p>
                 </div>
             </div>
             <nav className='nav'>
