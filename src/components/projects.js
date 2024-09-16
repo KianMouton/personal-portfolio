@@ -1,6 +1,7 @@
 import projectImage1 from "../images/project_img_1.jpg";
 import calculator1 from "../images/calculator_1.png";
 import drumPad from "../images/drumpad.png";
+import portfolio from "../images/personal_portfolio.png";
 
 const Projects = () => {
     return (
@@ -37,6 +38,15 @@ const Projects = () => {
                         </a>
                         <a href='https://kianmouton.github.io/react-Drum-Pad/' target="_blank" rel="noopener noreferrer">
                             <i className='fa-solid fa-arrow-up-right-from-square' />
+                        </a>
+                    </div>
+                </div>
+                <div className='project-item'>
+                    <img src={portfolio} alt='portfolio' />
+                    <div className='overlay'>
+                        <p>This Website</p>
+                        <a href="https://github.com/KianMouton/personal-portfolio" target="_blank" rel="noopener noreferrer">
+                            <i className="fa-brands fa-github fa-2xl"></i>
                         </a>
                     </div>
                 </div>
