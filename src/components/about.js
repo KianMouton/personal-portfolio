@@ -51,8 +51,8 @@ const About = () => {
                 <div className='test'>
                 <p>and I am a </p>
                     <span className='text-wrapper'>
-                    <p>frontend</p>
-                    <p>backend</p>
+                    <p>Frontend</p>
+                    <p>Backend</p>
                     <p>Full-Stack</p>
                     </span>
                 <p>Developer</p>
